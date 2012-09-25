@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/webgen/!svn/ver/2/wps-server/schema
+END
+wps_feature_GeometryLineString.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_feature_GeometryLineString.xsd
+END
+wps_featurecollection_GeometryLineString.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_featurecollection_GeometryLineString.xsd
+END
+wps_featurecollection_GeometryPolygon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_featurecollection_GeometryPolygon.xsd
+END
+wps_feature_GeometryPolygon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_feature_GeometryPolygon.xsd
+END
+wps_featurecollection_GeometryPoint.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_featurecollection_GeometryPoint.xsd
+END
+wps_feature_GeometryPoint.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_feature_GeometryPoint.xsd
+END
+wps_features.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/webgen/!svn/ver/2/wps-server/schema/wps_features.xsd
+END

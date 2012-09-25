@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ica:FeatureCollection xmlns:ica="www.icaci.org/genmr/wps" xmlns:gml="http://www.opengis.net/gml">
+  <gml:boundedBy>
+    <gml:Box>
+      <gml:coord>
+        <gml:X>783942.002108615706674754619598388671875</gml:X>
+        <gml:Y>151807.585604377905838191509246826171875</gml:Y>
+      </gml:coord>
+      <gml:coord>
+        <gml:X>783963.8342926166951656341552734375</gml:X>
+        <gml:Y>151837.37821123353205621242523193359375</gml:Y>
+      </gml:coord>
+    </gml:Box>
+  </gml:boundedBy>
+  <ica:Feature>
+    <ica:AttributeGEOMETRY>
+      <ica:Value srsName="0" wpstype="AttributeTypeGeometryPolygon">
+        <gml:outerBoundaryIs>
+          <gml:LinearRing>
+            <gml:coord>
+              <gml:X>783944.800730909220874309539794921875</gml:X>
+              <gml:Y>151837.37821123353205621242523193359375</gml:Y>
+            </gml:coord>
+            <gml:coord>
+              <gml:X>783963.8342926166951656341552734375</gml:X>
+              <gml:Y>151835.46775031569995917379856109619140625</gml:Y>
+            </gml:coord>
+            <gml:coord>
+              <gml:X>783961.035670323180966079235076904296875</gml:X>
+              <gml:Y>151807.585604377905838191509246826171875</gml:Y>
+            </gml:coord>
+            <gml:coord>
+              <gml:X>783942.002108615706674754619598388671875</gml:X>
+              <gml:Y>151809.49606529573793523013591766357421875</gml:Y>
+            </gml:coord>
+            <gml:coord>
+              <gml:X>783944.800730909220874309539794921875</gml:X>
+              <gml:Y>151837.37821123353205621242523193359375</gml:Y>
+            </gml:coord>
+            <gml:coord>
+              <gml:X>783944.800730909220874309539794921875</gml:X>
+              <gml:Y>151837.37821123353205621242523193359375</gml:Y>
+            </gml:coord>
+            <gml:coord>
+              <gml:X>783944.800730909220874309539794921875</gml:X>
+              <gml:Y>151837.37821123353205621242523193359375</gml:Y>
+            </gml:coord>
+          </gml:LinearRing>
+        </gml:outerBoundaryIs>
+      </ica:Value>
+    </ica:AttributeGEOMETRY>
+  </ica:Feature>
+</ica:FeatureCollection>

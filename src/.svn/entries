@@ -1,0 +1,74 @@
+10
+
+dir
+4
+http://kartographie.geo.tu-dresden.de/svn/webgen/wps-core/src/ica/wps
+http://kartographie.geo.tu-dresden.de/svn/webgen
+
+
+
+2010-02-26T12:15:46.845941Z
+2
+hahmann
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4b68a68c-22cf-11df-954b-ad40c4eb87e9
+
+WPSConstants.java
+file
+
+
+
+
+2010-09-23T08:04:52.796000Z
+d5910a327d60cb1d42c29bef57308214
+2010-02-26T12:15:46.845941Z
+2
+hahmann
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+983
+
+common
+dir
+
+data
+dir
+
+server
+dir
+
+tools
+dir
+

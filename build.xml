@@ -1,0 +1,77 @@
+<project name="webgen-wps-dev" default="copy" basedir=".">
+	
+  	<!-- set global properties for this build -->
+	<!-- server dependent properties -->
+	<property name="host" value="localhost"/>
+	<property name="port" value="222"/>
+	<property name="tomcat.port" value="8080"/>
+	<property name="tomcat.home" value="/usr/local/tomcat"/>
+	<property name="tomcat-war-file" value="wps-local"/>
+	<property name="local-war-file" value="wps-local"/>
+		
+			
+	<!-- the main copy task, copies the webapp specific stuff to the zih tomcat webapp directory -->
+	<target name="copy" description="" depends="copy_classes_local, war-to-tomcat"/>
+
+	<!-- copies webgen server stuff to webgen context - deletes folder for moved and deleted stuff-->
+	<target name="copy_classes_local" description="">
+			<!-- copy classes -->
+			<echo message="copy to dir: /WEB-INF/classes"/>
+			<delete dir="./WEB-INF/classes" />
+			<mkdir dir="./WEB-INF/classes" />
+			<copy todir="./WEB-INF/classes">
+	    		<fileset dir="./bin/">
+					<include name="**/*.class"/>
+				</fileset>
+			</copy>
+	</target>
+	<!-- updates webgen server stuff to webgen context -->
+	<target name="update_classes_local" description="">
+				<!-- copy classes -->
+				<copy todir="./WEB-INF/classes">
+		    		<fileset dir="./bin/">
+						<include name="**/*.class"/>
+					</fileset>
+				</copy>
+	</target>
+	
+		
+	<!--making a *.war file and saving it directly to the tomcat webapps folder-->
+	<target name="war-to-tomcat" >
+		<!--you can also define another name for the *.war...but than maybe you have to edit config/wps-server.properties and the index.html--> 
+		<war destfile="${tomcat.home}/webapps/${tomcat-war-file}.war" webxml="./WEB-INF/web.xml">
+			<fileset dir="">
+	        	<exclude name="src/**"/>
+	        	<exclude name="bin/**"/>
+	        	<exclude name=".settings/**"/>
+				<exclude name="data/*.xml"/>
+			</fileset>
+	        <lib dir="./WEB-INF/lib"/>
+	        <classes dir="WEB-INF/classes"/>
+	    </war>
+	</target>
+	<target name="copy_classes_to_tomcat" >
+				<!-- copy classes to the tomcat/webapps/${tomcat-war-file} folder -->
+				<echo message="copy to dir: ${tomcat.home}/webapps/${tomcat-war-file}.war"/>
+				<copy todir="${tomcat.home}/webapps/${tomcat-war-file}/WEB-INF/classes">
+			    		<fileset dir="./bin/">
+							<include name="**/*.class"/>
+						</fileset>
+				</copy>
+	</target>
+	<!--making a *.war file stored at the workspace-->
+	<target name="war-to-workspace" >
+		<war destfile="../${local-war-file}.war" webxml="./WEB-INF/web.xml">
+			<exclude name="src/**"/> 
+	        <fileset dir="">
+	        	<exclude name="src/**"/>
+	        	<exclude name="bin/**"/>
+	        	<exclude name=".settings/**"/>
+	        	<exclude name="data/*.xml"/>
+	        </fileset>
+	        <lib dir="./WEB-INF/lib"/>
+	        <classes dir="WEB-INF/classes"/>
+	    </war>
+	</target>
+	
+</project>

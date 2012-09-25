@@ -1,0 +1,8 @@
+td.title { font-family:Arial; font-size:15pt; color:#ffffff; }
+td.subtitle { font-family:Arial; font-size:13pt; color:#ffffff; }
+td.texttop { font-family:Arial; font-size:10pt; color:#ffffff; vertical-align:top; }
+body { background-Color:#444444; }
+
+a:link { font-family:Arial; font-size:10pt; color:#ffffff; }
+a:visited { font-family:Arial; font-size:10pt; color:#ffffff; }
+a:active { font-family:Arial; font-size:10pt; color:#ff0000; }
