@@ -45,6 +45,8 @@
 	        	<exclude name="bin/**"/>
 	        	<exclude name=".settings/**"/>
 				<exclude name="data/*.xml"/>
+				<exclude name=".classpath"/>
+				<exclude name=".project"/>
 			</fileset>
 	        <lib dir="./WEB-INF/lib"/>
 	        <classes dir="WEB-INF/classes"/>
@@ -68,6 +70,8 @@
 	        	<exclude name="bin/**"/>
 	        	<exclude name=".settings/**"/>
 	        	<exclude name="data/*.xml"/>
+	        	<exclude name=".classpath"/>
+	        	<exclude name=".project"/>
 	        </fileset>
 	        <lib dir="./WEB-INF/lib"/>
 	        <classes dir="WEB-INF/classes"/>
