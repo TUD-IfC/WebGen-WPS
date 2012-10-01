@@ -25,7 +25,7 @@ location = "./"
 server = "http://localhost:8080/wps-dev/wps"
 #server = "http://kartographie.geo.tu-dresden.de/webgen_wps/wps"
 
-#Funktions
+#Functions
 #*********
 #wps() sends the request via pycURL to the server 
 def wps(url):	

@@ -7,6 +7,8 @@
 	Author: Ralf Klammer
 	Source: Example by Todd Papaioannou (http://www.luckyspin.org/?p=28 [January 3rd, 2006])
 
+Usage on Linux command line wit 'g++'-compiler
+
    1st compile with  'g++ curl_byC.cpp -o curl_byC -lcurl'
 	&
    than execute with './curl_byC' 
