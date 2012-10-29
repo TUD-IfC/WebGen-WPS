@@ -140,11 +140,6 @@ public class WPSServer implements IWPSServer {
 			i++;
 		}
 		
-		String sOs = System.getProperty("os.name");
-		if ((sOs != null) && (sOs.toLowerCase().indexOf("windows") >= 0)) {
-			lstOperators.add(new WPSOperatorPushSimple());
-			lstOperators.add(new WPSOperatorPushParameter());
-		}
 		
 		if (lstOperators.size() == 0)
 			return null;
